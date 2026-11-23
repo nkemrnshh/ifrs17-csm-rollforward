@@ -23,7 +23,7 @@ An Excel and Python model that measures a single group of term life policies und
 | Year-3 extra deaths (+2) | RM200,000 charged to profit or loss, CSM unchanged |
 | Year-5 mortality +10% | FCF rises by RM193,233, CSM adjusted down by the same amount |
 | Mortality buffer | with the premium fixed, mortality only needs to be about 17% above best estimate for the group to turn onerous |
-| Pandemic-era rates (DOSM 2021 and 2022) | group is onerous at the base premium (day-one loss about RM214,000 to RM218,000) |
+| DOSM 2021 and 2022 rates (higher than 2024) | group is onerous at the base premium (day-one loss about RM214,000 to RM218,000) |
 
 ## Repository structure
 
@@ -40,7 +40,7 @@ docs/        write-up (PDF) and chart
 
 ## How to run
 
-Excel: open `model/CSM_model.xlsx`. Inputs are blue on the Assumptions sheet, and the Checks sheet should show "ALL CHECKS PASS". Events A and B have on/off switches on the Events sheet.
+Excel: open `model/CSM_model.xlsx`. # compares Python with Excel (expect PASS)
 
 Python (3.9 or newer):
 
@@ -71,7 +71,7 @@ Other inputs are my own assumptions: a flat 3.9% discount rate (based on the 10-
 - Simplified risk adjustment (a percentage of PV of claims), held at the same percentage when re-measured.
 - Extra deaths in Event A do not feed through to future lives or coverage units.
 - Coverage units are undiscounted sum assured in force, a judgement allowed by the standard.
-- Educational model. It is not suitable for financial reporting or pricing. Paragraph references (44, B72, B119) should be checked against the standard.
+- Educational model. It is not suitable for financial reporting or pricing.
 
 ## Author
 
