@@ -1,3 +1,0 @@
-state,sex,date,age_band,midpoint_age,prob_death_5q,q_annual_converted,mortality_rate_in_file,check_ratio_vs_file_rate
-Selangor,male,2024-01-01,40-44,42,0.011680,0.002347,0.002350,0.998720
-Selangor,male,2024-01-01,45-49,47,0.020810,0.004197,0.004210,0.996932
